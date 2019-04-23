@@ -21357,6 +21357,7 @@ Low profile connectors, straight&lt;p&gt;
 <part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-TRIMM" device="64Y" package3d_urn="urn:adsk.eagle:package:23750/1"/>
 <part name="SV1" library="con-harting-ml" library_urn="urn:adsk.eagle:library:149" deviceset="ML10" device="" package3d_urn="urn:adsk.eagle:package:6967/1"/>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="H6" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="4.3" package3d_urn="urn:adsk.eagle:package:14286/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -21614,6 +21615,9 @@ Low profile connectors, straight&lt;p&gt;
 <instance part="SUPPLY13" gate="GND" x="0" y="-48.26" smashed="yes">
 <attribute name="VALUE" x="-1.905" y="-51.435" size="1.778" layer="96"/>
 </instance>
+<instance part="H6" gate="G$1" x="-60.96" y="134.62" smashed="yes" rot="R270">
+<attribute name="NAME" x="-60.3758" y="131.826" size="1.778" layer="95" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -21630,7 +21634,8 @@ Low profile connectors, straight&lt;p&gt;
 <junction x="-91.44" y="144.78"/>
 <pinref part="C4" gate="G$1" pin="-"/>
 <wire x1="-83.82" y1="144.78" x2="-76.2" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="-76.2" y1="144.78" x2="-58.42" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="144.78" x2="-60.96" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="144.78" x2="-58.42" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="-91.44" y1="144.78" x2="-91.44" y2="139.7" width="0.1524" layer="91"/>
 <junction x="-119.38" y="144.78"/>
 <wire x1="-119.38" y1="157.48" x2="-119.38" y2="144.78" width="0.1524" layer="91"/>
@@ -21653,6 +21658,9 @@ Low profile connectors, straight&lt;p&gt;
 <junction x="-76.2" y="144.78"/>
 <pinref part="U2" gate="G$0" pin="GND"/>
 <wire x1="-119.38" y1="144.78" x2="-119.38" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="H6" gate="G$1" pin="MOUNT"/>
+<wire x1="-60.96" y1="137.16" x2="-60.96" y2="144.78" width="0.1524" layer="91"/>
+<junction x="-60.96" y="144.78"/>
 </segment>
 <segment>
 <pinref part="X2" gate="G$1" pin="1"/>
